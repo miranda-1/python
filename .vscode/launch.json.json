@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C++ (MinGW)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [
+        { "name": "PATH", "value": "C:\\MinGW\\bin;${env:PATH}" }
+      ],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+      "preLaunchTask": "C/C++: g++.exe build active file"
+    }
+  ]
+}
