@@ -1,34 +1,15 @@
-import os
-def exibir_o_nome(): 
-    print('🅙🅐🅟🅐 🅔🅧🅟🅡🅔🅢🅢\n')
+try:
 
-def exibir_as_opcoes():
-    print('1-Cadastrar restaurante')
-    print('2-Listar restaurante ')
-    print('3-Ativar restaurante')
-    print('4-Sair\n')
+    idade = int(input('Qual sua idade? '))
 
-def finalizando_app():
-    os.system('cls')
+    if idade <= 12:
+        print('Você está na categoria criança.')
 
-    print('Finalizando o app')
+    elif 13 <= idade <= 18:
+        print('Você está na categoria adolescente.')
 
-def escolher_as_opcoes():
-    opcao_escolhida = int(input('Escolha uma opção: '))
-
-    if opcao_escolhida == 1:
-        print('Cadastrar Restaurante')
-    elif opcao_escolhida == 2:
-        print('Listar Restaurantes')
-    elif opcao_escolhida == 3:
-        print('Ativar restaurante')
     else:
-        finalizando_app()
+        print('Você está na categoria adulto.')
 
-def main():
-    exibir_o_nome()
-    exibir_as_opcoes()
-    escolher_as_opcoes()
-
-if __name__ == '__main__':
-    main()
+except ValueError:
+    print('Digite apenas numeros, por favor!')
