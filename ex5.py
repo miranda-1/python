@@ -42,12 +42,15 @@ def escolha_as_opcoes():
 
     if escolha == 1:
         escolheu_numeros()
+        
         lista_encontrada()
     elif escolha == 2:
         escolheu_listas()
+        
         lista_encontrada()
     elif escolha == 3:
         data_nascimento()
+        
         lista_encontrada()
     elif escolha == 0:
         encerrando()
